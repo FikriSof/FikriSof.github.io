@@ -1,258 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio | Fikri Sofyan</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Personal Portfolio <i class="bi bi-person-check-fill"></i></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home <i class="bi bi-house"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About <i class="bi bi-file-earmark-person"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">My Projects <i class="bi bi-image"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact <i class="bi bi-person-lines-fill"></i></a>
-            </li>
-          </ul>
+  <body>
+    <!-- <div class="cursor-1"></div>
+    <div class="cursor-2"></div> -->
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <header>
+      <a href="" class="logo"><span> Fikri</span> Sofyan </a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#education">education</a>
+        <a href="#experience">experience</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <div class="follow">
+        <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=kiky.fikri31@gmail.com" class="fa fa-envelope"></a>
+        <a href="https://www.instagram.com/fikrisof/" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/muhammad-fikri-sofyan-107b431a5/" class="fab fa-linkedin"></a>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h1 class="hi">Hi!</h1>
+        <h3>I'm <span>Muhammad Fikri Sofyan</span></h3>
+        <p class="info">Front-End Developer</p>
+        <p class="text">web and mobile development enthusiast with demonstrated history of working in front-end</p>
+        <a href="#about" class="btn">About me</a>
+      </div>
+      <div class="image">
+        <img src="img/profile.png" alt="" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h1 class="heading">about <span>me</span></h1>
+      <div class="row-1">
+        <!-- <div class="image">
+          <img src="" alt="" />
+        </div> -->
+
+        <div class="content">
+          <h3>oh, hello! welcome to my world</h3>
+          <p>
+            I'm a Recent graduate from Gunadarma University majoring in Informatics Engineering with prior internship experience as developer in startup companies. hands-on experienced in front-end development website in indentifying
+            web-based user interaction along with designing & implementing user interface and be able in translating designs & wireframes into code, and writing interface code via javascript and reactjs workflows. also able to adapt in a
+            new environment and look for job opportunities that provide opportunities for further development.
+          </p>
+          <div class="box-container">
+            <div class="box">
+              <p><span>age :</span> 22</p>
+              <p><span>gender :</span> male</p>
+              <p><span>language :</span> indonesian, english</p>
+            </div>
+            <div class="box">
+              <p><span>hobbies :</span> badminton, competitive games</p>
+              <p><span>interests :</span> developing visual website and mobile application</p>
+            </div>
+          </div>
+          <a href="./assets/CV - Muhammad Fikri Sofyan.pdf" download="CV - Muhammad Fikri Sofyan" class="btn">download CV</a>
         </div>
       </div>
-    </nav>
-    <!-- Akhir Navbar -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/Foto linkedin.jpg" alt="Kiky Ganteng" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Muhammad Fikri Sofyan</h1>
-      <p class="lead">Bachelor's degree, Informatics Engineering At Gunadarma University</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,224L34.3,202.7C68.6,181,137,139,206,112C274.3,85,343,75,411,69.3C480,64,549,64,617,80C685.7,96,754,128,823,165.3C891.4,203,960,245,1029,234.7C1097.1,224,1166,160,1234,138.7C1302.9,117,1371,139,1406,149.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
+      <h1 class="heading">my <span>skills</span></h1>
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
+      <div class="row-2">
+        <div class="skills">
+          <div class="progress">
+            <h3>UI design <span>80%</span></h3>
+            <div class="bar"><span></span></div>
+          </div>
+          <div class="progress">
+            <h3>web development <span>85%</span></h3>
+            <div class="bar"><span></span></div>
+          </div>
+          <div class="progress">
+            <h3>mobile development <span>70%</span></h3>
+            <div class="bar"><span></span></div>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <h5>
-            A motivated and hard working 7th semester student. Experience in front end development who is comfortable working with javascript, PHP, HTML/CSS to deliver exceptional customer experience. Looking for new insight and experience
-            for personal development and opportunity to have an internship at a company.
-          </h5>
-          <div class="col-md-4">
-            <p><strong>Web Developer :</strong></p>
-            <p>Frontend</p>
-            <p>Backend</p>
-          </div>
-          <div class="col-md-4">
-            <p><strong>Database :</strong></p>
-            <p>MySQL</p>
-            <p>PostgreSQL</p>
-          </div>
-        </div>
-        <br />
-        <br />
-        <div class="row justify-content-center fs-5 text-center">
-          <p><i>Success isn't given it's earned.</i></p>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,0L48,42.7C96,85,192,171,288,176C384,181,480,107,576,69.3C672,32,768,32,864,69.3C960,107,1056,181,1152,197.3C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir About -->
 
-    <!-- Projects -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Projects</h2>
+        <div class="box-container">
+          <div class="box">
+            <h3>soft skills</h3>
+            <p>Team Work, Time Management, Good Communication, Critical Thinking, Creativity, Problem Solving.</p>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/Urbec.id.jpg" class="card-img-top" alt="Project 2" />
-              <div class="card-body">
-                <h3>Urbec.id</h3>
-                <h6>Tools: Node.JS & MongoDB</h6>
-                <p class="card-text">Responsible for working on a range of project, designing website, and developing front end functionality of site.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/Telorasin68.jpg" class="card-img-top" alt="Project 3" />
-              <div class="card-body">
-                <h3>Telorasin68</h3>
-                <h6>Tools: PHP & MySQL</h6>
-                <p class="card-text">Build a website e-commerce to help selling local snacks and handicrafts.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/AdminPanel-Telorasin68.jpg" class="card-img-top" alt="Project 4" />
-              <div class="card-body">
-                <h3>Telorasin68 Admin Panel</h3>
-                <h6>Tools: PHP & MySQL</h6>
-                <p class="card-text">Build Admin Panel to help manage the website of Telorasin68.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/Survey-form.jpg" class="card-img-top" alt="Project 5" />
-              <div class="card-body">
-                <h3>Survey Form</h3>
-                <h6>Tools: HTML & CSS</h6>
-                <p class="card-text">Make a Survey Form to earn Responsive Web Design Certification freeCodeCamp.org.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/LandingPage-FCC.jpg" class="card-img-top" alt="Project 6" />
-              <div class="card-body">
-                <h3>Landing Page</h3>
-                <h6>Tools: HTML & SCSS</h6>
-                <p class="card-text">Make a Landing Page to earn Responsive Web Design Certification freeCodeCamp.org.</p>
-              </div>
-            </div>
+          <div class="box">
+            <h3>technical skills</h3>
+            <p>Languages: HTML, CSS, Javascript, PHP, Python.</p>
+            <p>Framework: ReactJS, NodeJS, Laravel.</p>
+            <p>Database: MySQL, MongoDB, Oracle.</p>
+            <p>Design Tool: Figma.</p>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,192L48,165.3C96,139,192,85,288,90.7C384,96,480,160,576,202.7C672,245,768,267,864,250.7C960,235,1056,181,1152,181.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Projects -->
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>Contact Me</h2>
+    <section class="education" id="education">
+      <h1 class="heading"><span>my</span> education</h1>
+      <div class="content">
+        <div class="image">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <span> 2018 - 2022</span>
+        <h3>universitas gunadarma</h3>
+        <p>Informatics Engineering</p>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <h1 class="heading"><span>my</span> experience</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="content">
+            <span> Jul 2022 - Sep 2022</span>
+            <h1>LZR OTO</h1>
+            <h3>Web Developer</h3>
+            <h5>A showroom for selling quality and reliable used cars, Serve cash and credit payments. Located in Harapan Indah Bekasi.</h5>
+            <p>
+              - Built frontend of admin panel website with ReactJS using React library. <br />
+              - Built frontend of public website with ReactJS using React library. <br />
+              - Consumed RESTful APIs for admin panel and public website integrated. <br />
+              - Made an estimation feature of the selling price of a used car using the decision tree method for public website.
+            </p>
           </div>
         </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Thanks!</strong> Your Message Has Been Sent.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <form name="portfolio-contact-form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Message</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-              </div>
-              <button type="submit" class="btn btn-success btn-send">Send</button>
-
-              <button class="btn btn-info btn-loading d-none" type="button" disabled>
-                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
+        <div class="box">
+          <div class="content">
+            <span> Feb 2022 - Jun 2022</span>
+            <h1>PT. HASHMICRO SOLUSI INDONESIA</h1>
+            <h3>SOFTWARE PROGRAMMER INTERN</h3>
+            <h5>HashMicro is an ERP solution provider company with the most complete software suite for various types of industries.</h5>
+            <p>
+              - Made new / customed the modules. <br />
+              - Created, Read, Updated, and Deleted field. <br />
+              - Tested on the code that has been modified. <br />
+              - Push the modified code to github/gitlab. <br />
+              - Worked on Devtask given by IT Consultant. <br />
+              - Coordination with IT Consultant to fulfill clients requirements. <br />
+              - All development using Python, odoo14, and PostgreSQL for Database.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <span> Jul 2022 - Sep 2022</span>
+            <h1>TELOR ASIN 68</h1>
+            <h3>Web Developer</h3>
+            <h5>A marketplace for local snacks and handicrafts, located in Garut.</h5>
+            <p>
+              - Made design for database and website using figma. <br />
+              - Built a admin panel website using HTML/CSS, PHP, Bootstrap, and MySQL for database. <br />
+              - Built a e-commerce website using HTML/CSS, PHP, Bootstrap, and MySQL for database. <br />
+              - Made admin panel and e-commerce website integrated. <br />
+              - Consumed RESTful API RajaOngkir to calculate postage automatically.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <span> Mar 2021 - Jul 2021</span>
+            <h1>URBEC.ID</h1>
+            <h3>Web Developer</h3>
+            <h5>The power house information for global lifestyle media.</h5>
+            <p>
+              - Responsible for working on a range of project. <br />
+              - Collaboreted in a team focused on media lifestyle. <br />
+              - Developing front-end functionality. <br />
+              - Made design logo, UI/UX, and structure using Figma. <br />
+              - Built a website using ReactJS, NodeJS, ExpressJS and MongoDB for database.
+            </p>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,112C672,75,768,53,864,80C960,107,1056,181,1152,186.7C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Akhir Contact -->
 
-    <!-- Footer -->
-    <footer class="bg-secondary text-white text-center pb-3">
-      <br />
-      <p>
-        Created By <a href="https://www.instagram.com/fikrisof/" class="text-white fw-bold"><i class="bi bi-instagram"></i> Ki</a>
-      </p>
-    </footer>
-    <!-- Akhir Footer -->
+    <section class="portfolio me" id="portfolio">
+      <h1 class="heading"><span>my</span> portfolio</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="img/LZR OTO.jpg" alt="" />
+          <div class="content">
+            <h3>LZR OTO Public Website</h3>
+            <a href="https://github.com/FikriSof/lzroto-pemasaran" class="btn">view on github</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/AdminPanel-LZR OTO.jpg" alt="" />
+          <div class="content">
+            <h3>LZR OTO Admin Panel Website</h3>
+            <a href="https://github.com/lzroto/fe-admin-panel" class="btn">view on github</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Telorasin68.jpg" alt="" />
+          <div class="content">
+            <h3>Telor Asin 68 Website</h3>
+            <a href="https://github.com/FikriSof/telorasin68" class="btn">view on github</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/Urbec.id.jpg" alt="" />
+          <div class="content">
+            <h3>Urbec.id Website</h3>
+            <a href="https://github.com/urbec-id/web" class="btn">view on github</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <section class="contact me" id="contact">
+      <h1 class="heading">contact <span>me</span></h1>
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>my email</h3>
+          <p>kiky.fikri31@gmail.com</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>my number</h3>
+          <p>0815-1345-8798</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-location-dot"></i>
+          <h3>my address</h3>
+          <p>cempaka putih timur, jakarta pusat</p>
+        </div>
+      </div>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.609963248946!2d106.862753673944!3d-6.177252545249432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4fdd2547733%3A0xd23d5225e24874c7!2sCemp.%20Putih%20Tim.%2C%20Kec.%20Cemp.%20Putih%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1671434660258!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
 
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbx2ltf3g0Od3seTQy8HUsKKEK1CcIva9FfAGY5N9wBOVdWkEO9ZP-z6U-seWavqwmUH/exec";
-      const form = document.forms["portfolio-contact-form"];
-      const btnSend = document.querySelector(".btn-send");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+    <footer class="footer">created by <span>MFS</span> | all rights reserved!</footer>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // Ketika tombol submit diklik
-        btnLoading.classList.toggle("d-none");
-        // tampilkan tombol loading, hilangkan tombol send
-        btnSend.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol send, hilangkan tombol loading
-            btnLoading.classList.toggle("d-none");
-            btnSend.classList.toggle("d-none");
-            // tampilkan alert
-            myAlert.classList.toggle("d-none");
-            // reset form
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
   </body>
 </html>
